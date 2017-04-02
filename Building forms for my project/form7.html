@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	<link rel="stylesheet" href="form.css"/>
+	<script = "text/javascript">
+	function writeradioname() {
+	var radioo = document.getElementById('radioname');
+	var price=document.getElementById('demo');
+	switch (radioo) {
+	case 1:
+	price.innerHTML("The price is 2 euro") ;
+	break;
+		case 2:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 3:
+	price.innerHTML("The price is 2 euro");
+	break;
+	/*	case 4:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 5:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 6:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 7:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 8:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 9:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 10:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 11:
+	price.innerHTML("The price is 2 euro");
+	break;
+		case 12:
+	price.innerHTML("The price is 2 euro");
+	break; */
+	default:
+		
+	price.innerHTML("The price is 2 euro");
+	
+}
+	
+	
+	
+}
+	
+	
+	</script>
+	
+	<head>
+	<body>
+	<header>
+	<img src ="logo.jpg" alt ="logo area" class ="logo"/>
+	<div class = "container">
+	<!-- for background color we can use this site :::: http://www.tedmontgomery.com/tutorial/clrnmsGR.html -->
+	
+	<form action =" " method ="get"  >
+	<h1 class = "order " > Order Form </h1>
+	<h3> What would you like to buy? <br/> </h3>
+	
+	<select name="medicine"  ><br/>
+	<option value ="rhododandron" > Rhododendron campanulatum </option>
+	
+	<option value ="insect and plant" > Yarsagumba </option>
+	<option value ="j" > Jequirity </option>
+	<option value ="s" > Soap Pod </option> 
+	</select>
+	
+	
+	
+	
+	<br/>
+	<br/>
+	<h4>Name of client :</h4>
+	<input type="text" name="username" maxlength="10" value="name" size = "20" />
+	
+	<h4> Email address : </h4>
+	<input type ="text" name ="email" maxlength="10" value="emailname" size = "20" />
+	
+	<br/>
+	<br/>
+	<br/>
+	<h4> How many would you like to order ?<br/> </h4>
+	<!-- this is important this empty paragraph p -->
+	<p id ="welcome"> </p>
+	<input type="radio" name="medicineitem" value="one" id="radioname" onselect="writeradioname();"> 1<br>
+	<!-- <p id ="welcome"> </p> -->
+	
+	<input type="radio" name="medicineitem" value="two" id ="radioname" onselect="writeradioname();"> 2<br>
+	<!-- <p id ="welcome"> </p> -->
+  <input type="radio" name="medicineitem" value="three" id ="radioname" onselect="writeradioname();"> 3<br>
+  <!-- <p id ="welcome"> </p> // this is imp-->
+   <!-- <input type="radio" name="medicineitem" value="four" id ="radioname" onselect="writeradioname();"> 4<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="five" id ="radioname" onselect="writeradioname();"> 5<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="six" id ="radioname" onselect="writeradioname();"> 6<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="seven" id ="radioname" onselect="writeradioname();"> 7<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="eight" id ="radioname" onselect="writeradioname();"> 8<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="nine" id ="radioname" onselect="writeradioname();"> 9<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="ten" id ="radioname" onselect="writeradioname();"> 10<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="eleven" id ="radioname" onselect="writeradioname();"> 11<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="twelve" id ="radioname" onselect="writeradioname();"> 12<br>
+  <p id ="welcome"> </p>
+  <input type="radio" name="medicineitem" value="more" id ="radioname" onselect="writeradioname();"> More than twelve <br>
+  <p id ="welcome"> </p> -->
+  
+  
+  
+   <h4>Message about product discription:<small><i>(not compulsory)</i></small></h4> </p><br/>
+   <textarea name="message" rows="15" cols="60"> </textarea>
+   
+   
+  
+	
+	
+
+	
+	</div>
+	</header>
+	</body>
+	</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	

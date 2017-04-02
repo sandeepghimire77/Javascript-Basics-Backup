@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	<link rel="stylesheet" href="main.css"/>
+	<script type="text/javascript">
+	var imagetracker ='facebook.jpg';
+	
+	function change() {
+	var image = document.getElementById('social');
+	// i have waste nearly my 1 hour on this iamgetracher== ...coz i write imagetracker= only.......shitttttttttttttttttt
+	if (imagetracker=='facebook.jpg'){
+	image.src = 'twitter.jpg';
+	imagetracker='twitter.jpg';
+	}
+	else {
+	image.src='facebook.jpg';
+	imagetracker='facebook.jpg';
+	}
+	}
+	</script>
+	</head>
+	<body>
+	<img src="facebook.jpg" alt="social logo " id="social" onclick ="change();">
+	</body>
+	</html>
+	
+	
+	
+	

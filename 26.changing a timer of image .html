@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	<link rel="stylesheet" href="main.css"/>
+	<script type="text/javascript">
+var image_tracker = 'image1.jpg';
+function  change() {
+var image = document.getElementById('img');
+if(image_tracker=='image1.jpg') {
+	image.src='mage2.jpg';
+	image_tracker = 'mage2.jpg';
+	}
+	else {
+	image.src= 'image1.jpg';
+	image_tracker= 'image1.jpg';
+	}
+	}
+	
+	var timer = setInterval('change()',2000);
+	</script>
+    
+    </head>
+    <body>
+     <img src="image1.jpg" width="1120" height="400" id ="img" alt="" onClick="clearInterval(timer);">      
+     </body>
+     </html>
+     
+	

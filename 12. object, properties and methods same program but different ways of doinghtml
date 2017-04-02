@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	<link rel="stylesheet" href="main.css"/>
+	<script type="text/javascript">
+	
+	var x = " <br/> My name is sandeep "; 
+	// this is a object . x is a object 
+	var z = x.length;
+	document.write(z + ' ' );
+	
+	// this x.length is a initialization of properties .. here length is a properties. It will count the number of length or characters in string object x.
+	
+	//now we initialize the methods.
+	var y = x.toUpperCase();
+	// here toUpperCase is a method... here also object.method as of top object.length....
+	document.write(y);
+	
+	</script>
+	</head>
+<body>
+</body>
+</html>
+	

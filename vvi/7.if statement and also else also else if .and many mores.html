@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	<link rel="stylesheet" href="main.css"/>
+	<script type="text/javascript">
+	
+	var marks =20;
+	// here we implement if statement 
+	if (marks<35){
+	document.write("sorry , you are failed because you get only "  +  marks);
+	}
+	else if (marks>=35 && marks<60) {
+	document.write(" you are passed in second division and you get " + marks);
+	}
+	else if (marks>=60 && marks<80){
+	document.write("you are passed in first division and you get " + marks);
+	}
+	else if (marks>=80 && marks<=100)
+	{
+	document.write("\"congratulation\",you are passed in first division with distinction and you get " + marks); 
+	}
+	else {
+	document.write("Invalid number because " + marks "number is invalid ");
+	}
+	
+	
+	</script>
+	</head>
+<body>
+<div class="data" > 
+<h2> Notes on marks calculation  
+<h3> below 35----- failed <h3> 
+<h3>  35 to below 60----- 2nd division <h3> 
+<h3>  60 to below 80----- 1st division <h3> 
+<h3> above 80----- distinction <h3> 
+</div>
+</body>
+</html>	

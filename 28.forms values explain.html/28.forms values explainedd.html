@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	<link rel="stylesheet" href="form.css"/>
+	<script type= "text/javascript">
+	function check_info() {
+	var user_name = document.getElementById('username').value;
+	var pass_word= document.getElementById('password').value;
+	//"" denotes that yo khali cha vanera 
+	 if (user_name=="" || pass_word=="") 
+	 {
+	 alert("please enter the value");
+	 return false;
+	 }
+	 else {
+	 return true;
+	 }
+	 
+	
+	
+	}
+	
+	
+	
+	</script>
+	</head>
+	
+	<body>
+	
+	<form action ="subpage.html" method ="get" onsubmit="return check_info();">
+	Username: <input type ="text" name ="username" id="username"   />
+	Password: <input type="password" name ="password"  id="password" />
+	<input type="submit" value="login"/>
+		</form>
+	</body>
+</html>

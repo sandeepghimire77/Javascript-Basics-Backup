@@ -1,0 +1,23 @@
+.container {
+	width:1180px;
+	height:2000px;
+	margin:0px auto;
+	border : 2px solid black;
+	clear:both;
+	background-color:#FFF8F0;
+	padding: 35px 20px;
+	
+	
+}
+.logo {
+	width:232px;
+	height:212px;
+	float:left;
+	
+}
+.order {
+	text-align:center;
+	
+	
+}
+

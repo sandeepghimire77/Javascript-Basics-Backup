@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	<link rel="stylesheet" href="main.css"/>
+	<script type="text/javascript">
+	
+	var imagetracker = 'f';
+	function change() {
+	var image= document.getElementById ('social');
+	if (imagetracker == 'f')
+	{
+	image.src='twitter.jpg';
+	imagetracker='t';
+	
+	}
+	else {
+	image.src='facebook.jpg';
+	imagetracker='f';
+	}
+	
+	
+	}
+	
+	var timer= setInterval('change()',2000);
+	
+	//clearInterval(timer);
+	
+	</script>
+	</head>
+<body>
+
+<img src="facebook.jpg" alt="image" id = "social"	onclick= "clearInterval(timer); ">
+</body>
+</html>
