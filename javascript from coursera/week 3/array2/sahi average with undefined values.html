@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	
+	<script type="text/javascript"></script>
+</head>
+<body>
+
+<script> 
+var grades= [2, 5, , , 9, 8, , 8];
+/* if this array is  empty like grades[] then the final else statement will be executed... */
+var sum = 0;
+var count = 0;
+
+if (grades.length > 0){
+  for (index = 0; index < grades.length; index++){
+    if (grades[index] != undefined){
+		  sum += grades[index]; 
+      count = count + 1; // yesma hami count++ pani rakhna sakchau 
+	  // yesma hamile yehi tala eeuta matra bracket rakhnu ko karan k ho vane pachi hamilai sajilo hosss ra yedi if statement execute hune bitikai for loop ma jahos
+	  
+    }
+  }
+  //Do we really want to divide by the size of the array?
+  document.write(sum/count);
+}
+else
+  document.write("Empty Array");
+
+
+</script>

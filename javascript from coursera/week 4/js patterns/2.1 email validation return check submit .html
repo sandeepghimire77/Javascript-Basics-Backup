@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> pattern example </title>
+	<style>
+	input:focus{
+		background-color: #B3B3B3;
+	}
+	label{
+		display: block;
+	font-size:150%;
+	}
+	
+	</style>
+	</head>
+	<body>
+	<form>
+  <label>Preferred email address:
+  		<input type="email" id="email_addr" name="email1" value = "me@me.com" required></label>
+
+  	<label>Repeat email address:
+  		<input type="email" id="email_repeat" name="email2" required onchange="return check()"></label>
+<!-- yedi yo case ma validate email matches with return garnu cha vane we just use return check same in submit also -->
+  <input type = 'submit' value = "Confirm Emails!" onclick = "return check();">
+</form> 
+<script>
+function check() {
+      var email1 = document.getElementById('email_addr');
+      var email2 = document.getElementById('email_repeat');
+ 	 		if ( email1.value != email2.value) {
+ 	 			 alert("The two emails must match!!");
+         return false;
+		 <!-- return false will say i am not allowed to do what i wanna do while submit -->
+  		}
+}
+</script> 
+
+
+</body>
+</html>

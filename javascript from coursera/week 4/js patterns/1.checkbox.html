@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> pattern example </title>
+	<style>
+	input{
+			border:1px solid black;
+		}
+		input:focus{
+			background-color: #E6E6E6;
+		}
+		#nick{
+			margin-left: 4%;
+			display:none;
+			width: 50%;
+		}
+	
+	</style>
+</head>
+
+
+
+<body>
+	<form action="http://www.intro-webdesign.com" method = "GET">
+		<fieldset>
+			  <legend>Form Verification</legend>
+  <label for ="fName">First Name:</label>
+			  <input type = "text" name = "fName" id = "fName" required><br/>
+  			<label for = "lName">Last Name:</label>
+			  <input type = "text" name = "lName" id = "lName" required><br/>
+			  <label for = "yesNick">Nickname?:</label>
+			  <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange= "nicknameFunction()"/>	<br/>
+			    
+  <div id = "nick">
+				    <label for = "nickname">Nickname:</label>
+				    <input type = "text" name = "nickname" id = "nickname"><br/>
+			  </div>
+  <input type = "submit" value = "Verify"/>
+ </fieldset>
+</form>
+
+<script>
+function nicknameFunction(){
+		if (document.getElementById('yesNick').checked){
+      document.getElementById('nick').style.display="inline";
+      document.getElementById('nickname').setAttribute('required',true);
+	  <!-- good if u wanna set attribute to the dom properties . just do setattribute -->
+		}
+		else{ 
+			document.getElementById('nickname').removeAttribute('required');
+			<!-- if u wanna remove attributes just do removeAttribute -->
+			document.getElementById('nick').style.display="none";
+		}
+	}
+
+</script>
+
+
+</body>
+</html>	

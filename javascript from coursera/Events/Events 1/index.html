@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<meta charset = "utf -8 "/>	
+	<title>
+	Introduction to Javascript events 
+	</title>
+	<style>
+	p {
+	background-color:whitesmoke;
+	}
+	</style>
+
+
+	
+	
+	
+	</head>
+	<body>
+
+	<button  onclick="change1()">First button</button>
+	 <button  onclick="change2()">second button</button>
+	<button onclick="showdate()">show date of today</button>
+	<button id="hover" onmouseover="hover()"> hover over me </button>
+	<!-- <button  onclick="document.getElementById('change').innerHTML='first clicked it ';" >  first </button>
+	<button onclick="document.getElementById('change').innerHTML='second clicked it ';">  second </button> -->
+	<script>
+		function change1() {
+		document.getElementById('change').innerHTML="first button is clicked ";
+		}
+		function change2() {
+		document.getElementById('change').innerHTML="second button is clicked";
+		}
+		function showdate() {
+			document.getElementById('datetoday').innerHTML= Date();
+
+
+		}
+		function changetext() {
+			document.getElementById('demo').innerHTML="oops";
+		}
+	</script>
+	
+	<p id="demo" onclick="changetext()" > Dont change this </p>
+	<p id="change">  change this </p>
+	<p > Dont change this either  </p>
+	<p id="datetoday"> </p>
+	
+	</body>
+	</html>

@@ -1,0 +1,107 @@
+Hi everybody, welcome to my personal
+least favorite lecture of all time. It's the lecture where I try
+to explain the word this, and how it's used in programming languages. The only reason I don't enjoy
+this lecture, is that I find it extremely difficult to talk about the word
+this without using the word this. So try your best to follow along. And I'll do my best to make
+sure I'm as clear as possible. So why do we even need to
+use special key words? Well, because a key to smart programming
+is using different functions. You don't want to write your own code. You want to use somebody else's code. But a common road block, especially for
+new programmers, is trying to figure out. How can I write a function so
+that I can reuse it over and over again? How can I write this function so
+that different elements can use it? But the function knows basically,
+how do I know what information to use. That's where this keyword comes in. So this allows an element
+to refer to itself. So, every object in the DOM,
+has an automatically generated this. This this attribute allows you
+to access and element's info. Without this, it would be very difficult
+for functions to know what data to use. This is also used in outside functions. Let me draw up something really quickly,
+before we get to more explicit examples. When you're writing code,
+if you were to say have an A tag. And somewhere along
+the lines you say onclick. And you wanna write a function. How do you tell the function that
+you wanna use this particular a tag? As opposed to other a elements
+that might be in the program? Well you can go ahead, and you can
+somewhere put the word this in here. Whenever the computer sees the word this,
+boom. What it's going to do is it's just gonna
+backtrack and go back, back, back, back, back, back, back, back until it's,
+oops, here's an open tag. They must be referring to
+this DOM element right here. So let's look at what I hope are a few
+simple examples of using the word this. Right here I have four
+different elements on my page. I have two awesome pictures
+from the 80s and the 70s. And then, I also have a few divs with
+some text within it, right here. Boom and boom. Each one of these elements has
+been associated with an event. And I wanna show you how
+I can use the word this. So that the events can be very
+specific to the element I'm click on. So let's start by looking
+at this picture right here. In the html code you can see
+that I have source check. I have alt text check, and
+I also have an event that says on click. I want you to log to the console the alt
+text of this particular element. So as soon as the computer
+sees the word this. It's gonna back up,
+[SOUND] until it gets to the image. And then we'll say. Oh they want the alt text for this image. So lets see what happens when I
+actually click on this image. As you can see,
+as soon as I clicked on it. The message Awesome 80's haircut shows up,
+all right? If I were to click on this multiple times. It doesn't actually show up in
+the console multiple times. You can see that there's a little
+number over here that says. Oh, this has happened four times in a row. But the important thing is that,
+I click on an image and the event knew that this was
+the image I was clicking on. Let's look at the next example down here. I've got my div that just says, hi there. Checking out a div. I'm looking at the second
+example right here. On this one, I want I want to do something
+similar, but divs don't have alt text. So instead what I said to do is,
+go ahead and log the inner html. So when I click on this div,
+I'm expecting to see, hi there, checking out the div to
+show up in the console. As you can see, it's working. These first two examples are very similar. And that all I'm doing is basically
+kind of manipulating what's going on in the console. In these last two,
+I did something very similar. But instead of just using
+on-click do something. I'm going to go ahead and
+use this function over here. Here's a great example of code reuse. The first few examples, concept only. This one I want to show you how I can
+use this same function called displayID on different elements. On my family Christmas photo down here,
+you can see that I have an id of ID-1. On this picture over here
+I have an id of ID-2. So my hope is that they can both use
+the same exact function called displayID. And even though they're
+using the same function, it's actually gonna
+show different results. So let's see what happens
+when I start to click. ID-1, ID-1, ID-2, ID-2. Here's a simple example of us using
+onClick along with a function and the keyword, this,
+to provide different data. I want to show you though,
+a slightly more colorful example. That I think also makes
+this point really well. In this example let's start
+right off with the JavaScript. I have a function called showProperties. And it is expecting to be
+sent some sort of element. Remember, I can call this
+parameter anything I want. I can call it element,
+I can call it e, I can call it elem. It doesn't matter to the computer. As long as it makes sense to you,
+the general idea that. Oh, I think I'm gonna be
+passed a DOM element here. Once you get in side the function
+you can do document.getelementbyid. Basically what it's doing is it's
+grabbing this section of my hmtl. Stating I want to go ahead and I want to change what's showing
+up inside that little box. What do I want to change it to? I want to change it to the alt text of
+whatever element is being sent to me. I'm gonna stop here and
+pause just for a second. Because this is a great place for
+you to think. All right, she's talking about alt text. So that probably means the element
+is going to be a picture. Because if it ends up being a div or a paragraph, this won't break but
+nothing's going to happen. Now, I'm gonna show you
+the cool part of this. On each one of these elements, I have
+show property and the keyword this which says send this image that I am hovering
+over with my mouse and call that property. So let's take a look and
+see how this works. I'm gonna hover over
+the first picture of my dog. And I am really hoping that the alt text
+associated with this picture is going to show up in the preview, and it did. I hover over another picture,
+and I get with my boy. And then finally, in the last picture
+you can kind of see how once again the alt text is being
+displayed inside the preview. I've done something really simple here. And what you're going to do in one of the
+homeworks is expand on this idea and say. Not only do I wanna change whatever
+text is showing up in here. I actually want to change
+this whole picture. So go back. Follow this more complex example
+of using the keyword this that you can figure out how to
+change more than just one thing. How can we change different things? How can we change the background color? Could you change the border? Different things like this that are,
+you all know how to do. But just because you know how to do it,
+doesn't mean you don't have to stop and think and
+really process it in your mind first. The key word this, the concept of the word
+this, can be really tricky to grasp. It took me quite a while myself. And I don't think I really understood
+it until I started teaching it. The important thing to note is
+that repeated practice helps. You want to go in and
+you want to do as much coding as you can. And then, if or when you get stuck,
+remember to work backwards. Find that keyword and just start
+marching back until you find a tag. As soon as you find that tag, think back. Think to the early things you learned
+when you were first learning HTML5. Think about that DOM and go. Oh, we're talking about this little
+part of the tree right there. I hope this is something you're able
+to grasp much more quickly than I did. And I'm gonna do my best to give
+you the examples that you can use to really master this. Good luck.

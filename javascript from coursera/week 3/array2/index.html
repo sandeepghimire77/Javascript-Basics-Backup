@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> introduction to javascript </title>
+	
+	<script type="text/javascript"></script>
+</head>
+<body onload="show()">
+<button onclick="shows()"> click to see value </button>
+
+<p id="number" > </p>
+<p> Average of numbers <button onclick="averages()"> click here  </button> </p>
+<p id="average" > </p>
+<script> 
+function show() {
+var num = [];
+for(var i = 0; i < 2; i++){
+   num[i] = prompt("Enter a number");
+   }
+ }
+function shows(){
+
+document.getElementById('number').innerHTML=num;
+}
+function averages() {
+var sum=0;
+var count=0;
+if(num.length>0) { 
+	for(var index=0; index < num.length ; index++) {
+	if (num[index]!=undefined) {
+	sum=sum+num[index];
+	count=count+1;
+	}
+	
+
+	
+
+}
+average=(sum/count);
+document.getElementById('average').innerHTML=average;
+}
+else {
+document.getElementById('average').innerHTML="please write some numbers ";
+}
+
+}
+
+
+</script>
+</body>
+</html>
